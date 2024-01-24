@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krischo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/contact.css">
+    <!-- <link rel="stylesheet" href="carousel.css"> -->
+    <link rel="stylesheet" href="/css/slider.css">
+    <link rel="stylesheet" href="/css/blog2.css">
+    <link rel="stylesheet" href="/css/popup.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+    <!-- <script src="js/scrolltop.js" type="text/javascript"></script> -->
+    <link rel="stylesheet" href="/css/side.css">
+    <style>
+      .rightFixed-btns li{
+        padding: 1rem 1.3rem;
+      }
+      .rightFixed-btns__content{
+        margin-top: -3.4rem;
+        padding: .7rem;
+        padding-right: 6rem;
+        padding-left: 2rem;
+        line-height: 1.5rem;
+      }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+          <img src="/image/krishco-logo.jpg" onclick="location.href='/index.html'" style="user-select: none;">
+        </div>
+        <nav class="nav">
+          <ul class="nav-list">
+            <li><a href="/index.html"><i class="fa fa-home" style="color: black;"></i></a></li>
+            <li class="menu"><a class="a" style="color: black;">COMPANY <i class="fa-solid fa-angle-down"></i></a>
+              <ul class="submenu">
+                <li class="menu_item"><a href="/about.html">About us</a></li>
+               
+                <li class="menu_item"><a href="/gallary.html">Our gallary</a></li>
+                <!-- <li class="menu_item"><a href="#award" onclick="setTimeout(sco,1);" >Award & Recognition</a></li> -->
+              </ul>
+            </li>
+            <li class="menu"><a href="/Product-page.html" style="cursor: pointer; color: black;" class="a sr"
+                >PRODUCT</a>
+            </li>
+            </li>
+            <li class="menu"><a href="blog.html" class="a" style="color: black;">BLOG</a>
+            </li>
+            <li class="menu"><a href="#cont" class="a" onclick="setTimeout(scrll,1);" style="color: black;">CONTACT US</a>
+            </li>
+          </ul>
+        </nav>
+        <i class="fa-solid fa-bars" id="bars"></i>
+      </header>
+    <div class="rightFixed-btns">
+        <ul>
+          <li id="li">
+            <a href="#">
+              <i class="fa-brands fa-whatsapp fa-beat" aria-hidden="true"></i>
+              <div class="rightFixed-btns__content" id="content">
+                <small>WhatsApp</small><br>
+                <span>9308654075</span>
+              </div>
+            </a>
+          </li>
+          <li id="li2" class="content2">
+            <a href="#">
+              <i class="fa-solid fa-headset fa-beat"></i>
+              <div class="rightFixed-btns__content" id="content2">
+                <small>Enquiry</small><br>
+                <span>Now</span>
+              </div>
+            </a>
+          </li>
+          <li id="li3">
+            <a href="tel:9308654075">
+              <i class="fa fa-phone fa-beat" aria-hidden="true"></i>
+              <div class="rightFixed-btns__content" id="content3">
+                <small>Calling No.</small><br>
+                <span>9308654075</span>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up fa-beat"></i></button>
+
+    <div class="dhdng">
+        <h2> <span style="color:rgb(14, 140, 29);">Latest</span> <span style="color: rgb(238, 156, 25);">Blogs</span>
+        </h2>
+    </div>
+    <div class="blogslider">
+        <div class="blogbox" onclick="location.href='/Blog-Page/detail.html'">
+            <div class="imgpart">
+                <img src="/image/upvc2.jpg" onclick="location.href='/Blog-Page/detail.html'" alt="upvc2">
+            </div>
+            <div class="details">
+                <h5 class="card-title upvc">UPVC Pipes and Fittings </h5>
+                <p class="card-para"> Unplasticized polyvinyl chloride, commonly
+                    known as
+                    UPVC, has become a popular choice for  ....</p>
+
+            </div>
+            <br><div class="head"><label id="athr" for="">Author: </label>
+                <label id="pblsh" for="">Publish Date:</label>
+            </div>
+            <div class="namedat"><label id="athr" for=""> Aman Kumar</label>
+                <label id="pblsh" for=""> 26/12/2023</label>
+            </div>
+
+        </div>
+        <div class="blogbox" onclick="location.href='/Blog-Page/detail2.html'">
+            <div class="imgpart">
+                <img src="/image/Sewer-Pipes.png" alt="" onclick="location.href='/Blog-Page/detail2.html'">
+            </div>
+            <div class="details">
+                <h5 class="card-title">SWR Pipes and Fittings </h5>
+                <p class="card-para"> A Complete Guide - Soil, Waste and
+                    Stormwater (SWR) systems are an essential part of construction today,....</p>
+            </div>
+            
+            <br><div class="head"><label id="athr" for="">Author: </label>
+                <label id="pblsh" for="">Publish Date:</label>
+            </div>
+            <div class="namedat"><label id="athr" for=""> Aman Kumar</label>
+                <label id="pblsh" for=""> 26/12/2023</label>
+            </div>
+        </div>
+        <div class="blogbox" onclick="location.href='/Blog-Page/detail3.html'">
+            <div class="imgpart">
+                <img src="/image/agriculture.jpg" alt="" onclick="location.href='/Blog-Page/detail3.html'">
+            </div>
+            <div class="details">
+                <h5 class="card-title">Agri-Pipes and Fittings</h5>
+                <p class="card-para">In a dynamic agricultural world where
+                    resource use is important, agricultural pipes and fittings play and.................</p>
+            </div>
+            <br><div class="head"><label id="athr" for="">Author: </label>
+                <label id="pblsh" for="">Publish Date:</label>
+            </div>
+            <div class="namedat"><label id="athr" for=""> Aman Kumar</label>
+                <label id="pblsh" for=""> 26/12/2023</label>
+            </div>
+        </div>
+
+        <div class="blogbox" onclick="location.href='/Blog-Page/detail4.html'">
+            <div class="imgpart">
+                <img src="/image/cpvc.jpg" alt="" onclick="location.href='/Blog-Page/detail4.html'">
+            </div>
+            <div class="details">
+                <h5 class="card-title upvc">CPVC Pipes and Fittings </h5>
+                <p class="card-para"> Chlorinated Polyvinyl Chloride, or CPVC,
+                    has emerged as a leading material in the plumbing industry,....</p>
+            </div>
+            <br><div class="head"><label id="athr" for="">Author: </label>
+                <label id="pblsh" for="">Publish Date:</label>
+            </div>
+            <div class="namedat"><label id="athr" for=""> Aman Kumar</label>
+                <label id="pblsh" for=""> 26/12/2023</label>
+            </div>
+        </div>
+        <div class="blogbox" onclick="location.href='/Blog-Page/detail.html'">
+            <div class="imgpart">
+                <img src="/image/upvc2.jpg" onclick="location.href='/Blog-Page/detail.html'" alt="">
+            </div>
+            <div class="details">
+                <h5 class="card-title upvc">UPVC Pipes and Fittings </h5>
+                <p class="card-para"> Unplasticized polyvinyl chloride, commonly
+                    known as
+                    UPVC, has become a popular choice for  ....</p>
+
+            </div>
+            <br><div class="head"><label id="athr" for="">Author: </label>
+                <label id="pblsh" for="">Publish Date:</label>
+            </div>
+            <div class="namedat"><label id="athr" for=""> Aman Kumar</label>
+                <label id="pblsh" for=""> 26/12/2023</label>
+            </div>
+
+        </div>
+        <div class="blogbox" onclick="location.href='/Blog-Page/detail2.html'">
+            <div class="imgpart">
+                <img src="/image/Sewer-Pipes.png" alt="" onclick="location.href='/Blog-Page/detail2.html'">
+            </div>
+            <div class="details">
+                <h5 class="card-title">SWR Pipes and Fittings </h5>
+                <p class="card-para"> A Complete Guide - Soil, Waste and
+                    Stormwater (SWR) systems are an essential part of construction today,....</p>
+            </div>
+            <br><div class="head"><label id="athr" for="">Author: </label>
+                <label id="pblsh" for="">Publish Date:</label>
+            </div>
+            <div class="namedat"><label id="athr" for=""> Aman Kumar</label>
+                <label id="pblsh" for=""> 26/12/2023</label>
+            </div>
+        </div>
+        <div class="blogbox" onclick="location.href='/Blog-Page/detail3.html'">
+            <div class="imgpart">
+                <img src="/image/agriculture.jpg" alt="" onclick="location.href='/Blog-Page/detail3.html'">
+            </div>
+            <div class="details">
+                <h5 class="card-title">Agri-Pipes and Fittings</h5>
+                <p class="card-para">In a dynamic agricultural world where
+                    resource use is important, agricultural pipes and fittings play and.................</p>
+            </div>
+            <br><div class="head"><label id="athr" for="">Author: </label>
+                <label id="pblsh" for="">Publish Date:</label>
+            </div>
+            <div class="namedat"><label id="athr" for=""> Aman Kumar</label>
+                <label id="pblsh" for=""> 26/12/2023</label>
+            </div>
+        </div>
+
+        <div class="blogbox" onclick="location.href='/Blog-Page/detail4.html'">
+            <div class="imgpart">
+                <img src="/image/cpvc.jpg" alt="" onclick="location.href='/Blog-Page/detail4.html'">
+            </div>
+            <div class="details">
+                <h5 class="card-title upvc">CPVC Pipes and Fittings </h5>
+                <p class="card-para"> Chlorinated Polyvinyl Chloride, or CPVC,
+                    has emerged as a leading material in the plumbing industry,....</p>
+            </div>
+            <br><div class="head"><label id="athr" for="">Author: </label>
+                <label id="pblsh" for="">Publish Date:</label>
+            </div>
+            <div class="namedat"><label id="athr" for=""> Aman Kumar</label>
+                <label id="pblsh" for=""> 26/12/2023</label>
+            </div>
+        </div>
+    </div>
+    <div id="blogs" style="border: none;">
+        <div class="div2">
+            <div class="subdiv2"><img src="/image/upvc2.jpg" onclick="location.href='/Blog-Page/detail.html'" alt=""></div>
+            <div class="subdiv21">
+                <h1>UPVC Pipes </h1>
+                <span>Unplasticized polyvinyl chloride, commonly
+                    known as
+                    UPVC, has become a popular choice for domestic Its unique features make it an ideal product
+                    for a variety of applications, providing homeowners with reliable,....</span>
+                <button onclick="location.href='/Blog-Page/detail.html'">See more..</button>
+            </div>
+        </div>
+    </div>
+    <div class="second">
+        <div class="second1">
+            <div class="sdiv1">
+                <h1>Sewer Pipes and Fittings</h1>
+                <p class="card-para" style="padding-right: 1rem;"> A Complete Guide - Soil, Waste and
+                    Stormwater (SWR) systems are an essential part of construction today,....</p>
+                    <button class="read" onclick="location.href='/Blog-Page/detail2.html'"> Read more</button>
+                <span id="sp">Author: Aman Kumar</span><span id="sp1">Issue Date: 26/12/2023</span>
+            </div>
+            <div class="sdiv2"><img src="/image/Sewer-Pipes.png" alt=""></div>
+        </div>
+    </div>
+    <div class="second" >
+        <div class="second1" style="position: absolute; right: 0; background-color: white;">
+            <div class="sdiv2" style="padding-right: 1rem;"><img src="/image/agriculture.jpg" alt=""></div>
+            <div class="sdiv1" >
+                <h1>Agri-Pipes and Fittings</h1>
+                <p class="card-para">In a dynamic agricultural world where
+                    resource use is important, agricultural pipes and fittings play and.................</p>
+                    <button class="read" onclick="location.href='/Blog-Page/detail3.html'"> Read more</button>
+                <span id="sp">Author: Aman Kumar</span><span id="sp1">Issue Date: 26/12/2023</span>
+            </div>
+        </div>
+    </div>
+ 
+<footer>
+  <div class="small_footer">
+    <div class="small">
+      <i class="fa-solid fa-phone"> &nbsp; +5644187595</i>
+      <i class="fa-brands fa-whatsapp">&nbsp; +5644187595</i>
+      <ul class="social">
+        <li><a href="#"><i class="fa-brands fa-facebook" title="Facebook" style="color: #f4f6f9;"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-instagram" title="Instagram" style="color:#f9f9f9;"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-twitter" title="Twitter" style="color:#f0fbff;"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-youtube" title="Youtube" style="color:#f6eeee;"></i></a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="felx-div">
+    <ul class="ftr-box">
+      <!-- <img src="kri-logo.png" alt=""> -->
+ 
+      <li>
+        <h3>Quick Links</h3><br>
+        <h4><a href="Product-page.html">Product</a></h4><br>
+        <h4><a href="about.html">About Us</a></h4><br>
+        <h4><a href="#cont" onclick="setTimeout(scrll,1);">Contact us</a></h4><br>
+        <h4><a href="blog.html">Blogs</a></h4><br>
+        <h4><a href="gallary.html">Gallery</a></h4><br>
+      </li>
+      <li>
+        <div>
+          <h3>Contact Us</h3><br>
+          <div class="p">2nd Floor, Mithulok, West Boring Canal Road, Khetan Lane, Near Bharat Petrol Pump,
+            Beside
+            Senco
+            Gold & Diamonds, Patna, Bihar- 800001</div>
+        </div>
+      </li>
+    </ul>
+      <!-- <li> -->
+        <div class="div-li">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3597.6987966567876!2d85.11724797517394!3d25.614923214655015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed58ee6d975d47%3A0xbc5045cc2b8ae11c!2sRays%20Edutech%20Pvt.%20Ltd!5e0!3m2!1sen!2sin!4v1698580783201!5m2!1sen!2sin"
+            style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      <!-- </li> -->
+  </div>
+</footer>
+<div class="popup1">
+  <div class="rak">
+    <div>
+        <i class="fa-solid fa-xmark" id="mark" onclick="$(this).parent().parent().parent().css('display','none');"></i>
+        <h1>Enquiry Form</h1>
+        <table id="table1">
+            <tr>
+                <td>
+                  <label id="l1">Name</label>
+                  <input type="text" id="t" oninput="legend('#l1','#t')" placeholder="Name" onfocusout="fgchek('#t')" onfocus="fgain('#t')">
+                  <br><span></span>
+                </td>
+                <td>
+                  <label id="l2">Contact</label>
+                  <input type="text" id="t1" oninput="legend('#l2','#t1')" placeholder="Contact" minlength="10" maxlength="10" onfocusout="fgchek('#t1')" onfocus="fgain('#t1')">
+                  <br><span></span>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                  <label id="l3">Email Id</label>
+                  <input type="text" id="t2" placeholder="Email Id" style="width: 95%;" oninput="legend('#l3','#t2')" onfocusout="fgchek('#t2')" onfocus="fgain('#t2')">
+                  <br><span></span>
+                </td>
+            </tr>
+            <tr>
+              <td style="height: 12rem;" colspan="2">
+                <label id="l88">Message</label>
+                <textarea placeholder="Message" id="t100" oninput="legend('#l88','#t100')"></textarea>
+                <br><span></span>
+              </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                  <button>&#x2713; Submit</button>
+                  <!-- <input type="button" value="&#x2713; Submit"> -->
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <script src="js/scrolltop.js"></script>
+    <script>
+        $(document).ready(function () {
+            var a = 0;
+            $('.fa-bars').click(function () {
+                if (a == 0) {
+                    $('.nav').css({ 'right': '0rem', 'transition': '.3s all linear' })
+                    a = 1;
+                }
+                else if (a == 1) {
+                    $('.nav').css({ 'right': '-21rem', 'transition': '.3s all linear' })
+                    a = 0;
+                }
+            })
+        });
+        $(document).ready(function () {
+            $('.blogslider').slick({
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                autoplay: true,
+                autoplaySpeed: 4000,
+                arrows: true,
+                dots: false,
+                pauseOnHover: true,
+                prevArrow: '<button type="button" data-role="none" class="slick-prev" aria-label="Previous" tabindex="0" role="button"><i class="fa-solid fa-chevron-left"></i></button>',
+                nextArrow: '<button type="button" data-role="none" class="slick-next" aria-label="Next" tabindex="0" role="button"><i class="fa-solid fa-chevron-right"></i></button>',
+                responsive: [
+                    {
+
+                        breakpoint: 850,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1,
+                            infinite: true,
+                        }
+                    },
+                    {
+
+                        breakpoint: 750,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1,
+                            infinite: true,
+                        }
+                    },
+                    {
+
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            infinite: true,
+                        }
+                    },
+                ]
+            });
+        });
+    </script>
+</body>
+
+</html>

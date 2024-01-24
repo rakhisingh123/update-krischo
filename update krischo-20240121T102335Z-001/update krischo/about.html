@@ -1,0 +1,1262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.green.css">
+  <!-- <link rel="stylesheet" href="vendor/bootstrap-icons/"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/side.css">
+  <link rel="stylesheet" href="css/popup.css">
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html{
+        font-size: 10px;
+      }
+      .submenu {
+        padding: 2rem 0;
+
+      }
+
+#about {
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+#about .about-img {
+  height: 510px;
+  overflow: hidden;
+}
+
+#about .about-img img {
+  margin-left: -15px;
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  #about .about-img {
+    height: auto;
+  }
+
+  #about .about-img img {
+    margin-left: 0;
+    padding-bottom: 30px;
+  }
+}
+
+#about .content .h2 {
+  color: #333;
+  font-weight: 300;
+  font-size: 24px;
+}
+
+#about .content h3 {
+  color: #777;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 26px;
+  font-style: italic;
+  
+}
+
+#about .content p {
+  line-height: 26px;
+  font-size: 14px;
+}
+
+#about .content p:last-child {
+  margin-bottom: 0;
+}
+
+#about .content i {
+  font-size: 20px;
+  padding-right: 4px;
+  color: #1dc8cd;
+}
+
+#about .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+#about .content ul li {
+  padding-bottom: 10px;
+}
+
+/* Product Featuress Section
+--------------------------------*/
+#features {
+  background: #fff;
+  padding: 60px 0 0 0;
+  overflow: hidden;
+}
+
+#features .features-img {
+  text-align: center;
+  padding-top: 20px;
+}
+
+@media (min-width: 769px) {
+  #features .features-img {
+    padding-top: 120px;
+    margin-top: -200px;
+  }
+}
+
+#features .features-img img {
+  max-width: 100%;
+}
+
+#features .box {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+#features .icon {
+  margin-bottom: 10px;
+}
+
+#features .icon i {
+  color: #666666;
+  font-size: 45px;
+  transition: 0.5s;
+}
+
+#features .icon i:before {
+  background: #1dc8cd;
+  background: linear-gradient(45deg, #1dc8cd 0%, #55fabe 100%);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#features .title {
+  font-weight: 300;
+  margin-bottom: 15px;
+  font-size: 22px;
+}
+
+#features .title a {
+  color: #111;
+}
+
+#features .description {
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+
+#features .section-description {
+  padding-bottom: 10px;
+}
+
+/* Product Advanced Featuress Section
+--------------------------------*/
+#advanced-features {
+  overflow: hidden;
+}
+
+#advanced-features .features-row {
+  padding: 60px 0 30px 0;
+}
+
+#advanced-features h2 {
+  font-size: 26px;
+  font-weight: 500;
+  color: #000;
+}
+
+#advanced-features h3 {
+  font-size: 3rem;
+  line-height: 24px;
+  font-weight: 400;
+  font-style: italic;
+  color: #999;
+}
+
+#advanced-features p {
+  line-height: 24px;
+  color: #777;
+  margin-bottom: 30px;
+}
+
+#advanced-features i {
+  color: #666666;
+  font-size: 64px;
+  transition: 0.5s;
+  float: left;
+  padding: 0 15px 0px 0;
+  line-height: 1;
+}
+
+#advanced-features i:before {
+  background: #1dc8cd;
+  background: linear-gradient(45deg, #1dc8cd 0%, #55fabe 100%);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#advanced-features .advanced-feature-img-right {
+  max-width: 100%;
+  float: right;
+  padding: 0 0 30px 30px;
+}
+
+#advanced-features .advanced-feature-img-left {
+  max-width: 100%;
+  float: left;
+  padding: 0 30px 30px 0;
+}
+
+@media (max-width: 768px) {
+
+  #advanced-features .advanced-feature-img-right,
+  #advanced-features .advanced-feature-img-left {
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 767px) {
+
+  #advanced-features .advanced-feature-img-right,
+  #advanced-features .advanced-feature-img-left {
+    max-width: 100%;
+    float: none;
+    padding: 0 0 30px 0;
+  }
+}
+
+/* Call To Action Section
+--------------------------------*/
+#call-to-action {
+  overflow: hidden;
+  background: linear-gradient(rgba(29, 200, 205, 0.65), rgba(29, 205, 89, 0.2)), url(../img/call-to-action-bg.jpg) fixed center center;
+  background-size: cover;
+  padding: 80px 0;
+}
+
+#call-to-action .cta-title {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+#call-to-action .cta-text {
+  color: #fff;
+}
+
+@media (min-width: 769px) {
+  #call-to-action .cta-btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}
+
+#call-to-action .cta-btn {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 30px;
+  border-radius: 25px;
+  transition: 0.5s;
+  margin: 10px;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+#call-to-action .cta-btn:hover {
+  background: #1dc8cd;
+  border: 2px solid #1dc8cd;
+}
+
+/* More Features Section
+--------------------------------*/
+#more-features {
+  padding: 60px 0 60px 0;
+  overflow: hidden;
+}
+
+#more-features .box {
+  padding: 40px;
+  margin-bottom: 30px;
+  box-shadow: 0px 0px 30px rgba(73, 78, 92, 0.15);
+  background: #fff;
+  transition: 0.4s;
+  height: 100%;
+}
+
+#more-features .icon {
+  float: left;
+}
+
+#more-features .icon i {
+  color: #666666;
+  font-size: 80px;
+  transition: 0.5s;
+  line-height: 0;
+}
+
+#more-features .icon i:before {
+  background: #1dc8cd;
+  background: linear-gradient(45deg, #1dc8cd 0%, #55fabe 100%);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#more-features h4 {
+  margin-left: 100px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+#more-features h4 a {
+  color: #111;
+}
+
+#more-features p {
+  font-size: 14px;
+  margin-left: 100px;
+  margin-bottom: 0;
+  line-height: 24px;
+}
+
+@media (max-width: 767px) {
+  #more-features .box {
+    margin-bottom: 20px;
+  }
+
+  #more-features .icon {
+    float: none;
+    text-align: center;
+    padding-bottom: 15px;
+  }
+
+  #more-features h4,
+  #more-features p {
+    margin-left: 0;
+    text-align: center;
+  }
+}
+
+/* Clients Section
+--------------------------------*/
+#clients {
+  padding: 30px 0;
+  background: #fff;
+  overflow: hidden;
+}
+
+#clients img {
+  max-width: 100%;
+  opacity: 0.5;
+  transition: 0.3s;
+  padding: 15px 0;
+}
+
+#clients img:hover {
+  opacity: 1;
+}
+
+/* Pricing Section
+--------------------------------*/
+#pricing {
+  padding: 60px 0 60px 0;
+  overflow: hidden;
+}
+
+#pricing .box {
+  padding: 40px;
+  margin-bottom: 30px;
+  box-shadow: 0px 0px 30px rgba(73, 78, 92, 0.15);
+  background: #fff;
+  text-align: center;
+}
+
+#pricing h3 {
+  font-weight: 400;
+  margin-bottom: 15px;
+  font-size: 28px;
+}
+
+#pricing h4 {
+  font-size: 46px;
+  color: #1dc8cd;
+  font-weight: 300;
+}
+
+#pricing h4 sup {
+  font-size: 20px;
+  top: -20px;
+}
+
+#pricing h4 span {
+  color: #bababa;
+  font-size: 20px;
+}
+
+#pricing ul {
+  padding: 0;
+  list-style: none;
+  color: #999;
+  text-align: left;
+  line-height: 20px;
+}
+
+#pricing ul li {
+  padding-bottom: 12px;
+}
+
+#pricing ul i {
+  color: #1dc8cd;
+  font-size: 18px;
+  padding-right: 4px;
+}
+
+#pricing .get-started-btn {
+  background: #515e61;
+  display: inline-block;
+  padding: 6px 30px;
+  border-radius: 20px;
+  color: #fff;
+  transition: none;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+}
+
+#pricing .featured {
+  border: 2px solid #1dc8cd;
+}
+
+#pricing .featured .get-started-btn{
+  background: linear-gradient(45deg, #1de099, #1dc8cd);
+}
+/* ----------------------------- */
+.heading{
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 3rem;
+}
+.turn {
+    /* border: 1px solid red; */
+    overflow: hidden;
+    /* height: 25rem; */
+    position: relative;
+}
+
+.testimonial {
+    margin-top: 5rem;
+    position: relative;
+    display: flex;
+    gap: 3rem;
+    padding: -1.5rem;
+    justify-content: space-between;
+    transition: 0.5s;
+}
+
+.first {
+    border: 2px solid #FF6600;
+    border-radius: 4px;
+    margin-left: 20px;
+    background: url(quate.png);
+    background-repeat: no-repeat;
+    background-size: 10%;
+    background-position: right 20px bottom 10px !important;
+    height: 20rem;
+}
+
+.first {
+    /* background-color: white; */
+    position: relative;
+    /* margin-left: 5rem; */
+    margin-top: 5rem;
+    border: 2px solid orangered;
+    width: 95% !important;
+    height: auto;
+    /* animation: turn 5s 2s infinite linear; */
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+
+}
+
+.img img {
+    position: absolute;
+    /* border: 1px solid rebeccapurple; */
+    height: 10rem;
+    width: 10rem !important;
+    border-radius: 2rem;
+    top: -5rem;
+    left: 2rem;
+    background-color: white;
+}
+
+.first label {
+    font-size: 1.5rem;
+    position: absolute;
+    top: -1.5rem;
+    background-color: white;
+    letter-spacing: 1px;
+    font-weight: 900;
+    left: 20%;
+}
+
+.first h3 {
+    margin-top: 3rem;
+    /* position: absolute;
+    top: 2rem; */
+    font-weight: 550;
+    font-size: 2rem;
+    text-align: center;
+
+}
+
+.first p {
+    width: 100%;
+    height: 100%;
+    text-align: justify;
+    padding: 2rem;
+    /* line-height: 2rem; */
+    /* letter-spacing: 1px; */
+
+    padding: 1rem;
+    font-size: 2rem;
+    color: #000428;
+
+}
+
+/* Frequently Asked Questions Section
+--------------------------------*/
+#faq {
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+#faq .faq-list {
+  padding: 0;
+  list-style: none;
+}
+
+#faq .faq-list li {
+  border-bottom: 1px solid #f0f0f0;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+#faq .faq-list .question {
+  display: block;
+  position: relative;
+  font-family: #1dc8cd;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  padding-left: 25px;
+  cursor: pointer;
+  color: #179ca0;
+  transition: 0.3s;
+}
+
+#faq .faq-list i {
+  font-size: 16px;
+  position: absolute;
+  left: 0;
+  top: -2px;
+}
+
+#faq .faq-list p {
+  margin-bottom: 0;
+  padding: 10px 0 0 25px;
+}
+
+#faq .faq-list .icon-show {
+  display: none;
+}
+
+#faq .faq-list .collapsed {
+  color: black;
+}
+
+#faq .faq-list .collapsed:hover {
+  color: #1dc8cd;
+}
+
+#faq .faq-list .collapsed .icon-show {
+  display: inline-block;
+  transition: 0.6s;
+}
+
+#faq .faq-list .collapsed .icon-close {
+  display: none;
+  transition: 0.6s;
+}
+
+/* Our Team Section
+--------------------------------*/
+#team {
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+#team .member {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#team .member .pic {
+  margin-bottom: 15px;
+  overflow: hidden;
+  height: 260px;
+}
+
+#team .member .pic img {
+  max-width: 100%;
+}
+
+#team .member h4 {
+  font-weight: 700;
+  margin-bottom: 2px;
+  font-size: 18px;
+}
+
+#team .member span {
+  font-style: italic;
+  display: block;
+  font-size: 13px;
+}
+
+#team .member .social {
+  margin-top: 15px;
+}
+
+#team .member .social a {
+  color: #b3b3b3;
+}
+
+#team .member .social a:hover {
+  color: #1dc8cd;
+}
+
+#team .member .social i {
+  font-size: 18px;
+  margin: 0 2px;
+}
+
+/* Gallery Section
+--------------------------------*/
+#gallery {
+  background: #fff;
+  padding: 60px 0 0 0;
+  overflow: hidden;
+}
+
+#gallery .container-fluid {
+  padding: 0px;
+}
+
+#gallery .gallery-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  transition: all ease-in-out 0.4s;
+}
+
+#gallery .gallery-item {
+  overflow: hidden;
+  position: relative;
+  padding: 0;
+  vertical-align: middle;
+  text-align: center;
+}
+
+#gallery .gallery-item img {
+  transition: all ease-in-out 0.4s;
+  width: 100%;
+}
+
+#gallery .gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+#gallery .gallery-item:hover .gallery-overlay {
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.7);
+}
+section {
+  overflow: hidden;
+}
+
+/* Sections Header
+--------------------------------*/
+.section-header .section-title {
+  font-size: 32px;
+  color: #111;
+  text-align: center;
+  font-weight: 400;
+}
+
+.section-header .section-description {
+  text-align: center;
+  padding-bottom: 40px;
+  color: #777;
+  font-style: italic;
+}
+
+.section-header .section-divider {
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #1dc8cd;
+  background: linear-gradient(0deg, #1dc8cd 0%, #55fabe 100%);
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+/* Section with background
+--------------------------------*/
+.section-bg {
+  background: #eff5f5;
+}
+    </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="/image/krishco-logo.jpg" onclick="location.href='index.html'" style="user-select: none;">
+    </div>
+    <nav class="nav">
+      <ul class="nav-list">
+        <li><a href="index.html"><i class="fa fa-home" style="color: black;"></i></a></li>
+        <li class="menu"><a class="a" style="color: black;">COMPANY <i class="fa-solid fa-angle-down"></i></a>
+          <ul class="submenu">
+            <li class="menu_item"><a href="about.html">About us</a></li>
+           
+            <li class="menu_item"><a href="gallary.html">Our gallary</a></li>
+            <li class="menu_item"><a href="#award" onclick="setTimeout(sco,1);" >Award & Recognition</a></li>
+          </ul>
+        </li>
+        <li class="menu"><a href="Product-page.html" style="cursor: pointer; color: black;" class="a sr"
+            >PRODUCT</a>
+        </li>
+        </li>
+        <li class="menu"><a href="blog.html" class="a" style="color: black;">BLOG</a>
+        </li>
+        <li class="menu"><a href="#cont" class="a" onclick="setTimeout(scrll,1);" style="color: black;">CONTACT US</a>
+        </li>
+      </ul>
+    </nav>
+    <i class="fa-solid fa-bars" id="bars"></i>
+  </header>
+    <div class="container-fluid"  style="top: 15rem;position: relative;">
+        <div class="section-header" >
+          <h3 class="section-title" style="font-size: 5rem;font-weight: 700;">About <span style="color: orangered;"> Us</span></h3>
+          <span class="section-divider"></span>
+          <p class="section-description" style="font-size: 2.5rem; color: black;">
+            At the heart of KRISHCO is a relentless pursuit of excellence in water solutions, agricultural implements, power generation equipment, and fluid technology applications. We go beyond expectations, setting new standards that redefine quality and efficiency. As a premium supplier, our commitment to our customers is evident in our mission: "Quality you can rely on."
+
+          </p>
+        </div>
+      <!-- ======= Advanced Featuress Section ======= -->
+      <section id="advanced-features">
+        <div class="features-row section-bg" data-aos="fade-up">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <img class="advanced-feature-img-right wow fadeInRight" src="image/agriculture.jpg" alt="">
+                <div>
+                  <h2>Diverse Product Portfolio:</h2>
+                  <p style="font-size: 1.5rem; color: black;">Embracing innovation, we are proud to introduce our latest range of products – CPVC, UPVC, SWR, and AGRI pipes and fittings. These additions exemplify our dedication to providing comprehensive solutions for your evolving needs. Whether it's efficient water management, robust irrigation systems, or industry-leading home appliances, KRISHCO delivers products that ensure the highest levels of reliability, flexibility, and efficiency.</p>
+                  <h4 style="font-size: 2rem; ">Innovation at the Core:</h4>
+                  <!-- <h2>Duis aute irure dolor in reprehenderit in voluptate velit esse</h2> -->
+                  <!-- <h3>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h3> -->
+                  <p style="font-size: 1.5rem; color: black;">Intelligence. Inspiration. Inventiveness. These principles guide us in every aspect of our business. In the dynamic field of water movement technology, KRISHCO is at the forefront, consistently setting benchmarks with our developments, products, systems, and services. Our team of experienced and creative professionals, coupled with innovative technical systems, ensures that we stay ahead of the curve.
+                  </p>
+                  <h4 style="font-size: 2rem;">Making Life Easy:</h4>
+                  <p style="font-size: 1.5rem; color: black;">Our commitment to making life easy is the cornerstone of our philosophy. We understand the importance of simplicity and functionality in our products and solutions. At KRISHCO, we measure our success by the ease we bring into the lives of people. By anticipating and addressing customer needs comprehensively, we develop innovations that redefine industry standards.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="features-row" data-aos="fade-up">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <img class="advanced-feature-img-left" src="" alt="">
+                <div>
+                  <h2>Crafting Quality, Ensuring Reliability:</h2>
+                  <i class="bi bi-calendar4-week"></i>
+                  <p style="font-size: 1.5rem;color: black;">At KRISHCO, our focus on cutting-edge machinery goes hand in hand with our dedication to quality. We go beyond manufacturing – we engineer products that withstand the test of time. The amalgamation of our skilled workforce, innovative technologies, and world-class infrastructure is what sets us apart.</p>
+                  <i class="bi bi-bar-chart"></i>
+                  <p style="font-size: 1.5rem;color: black;">Choose Krishco Engineers Pvt Ltd for a partnership that transcends expectations – where precision meets innovation, and quality is not just promised but delivered. Experience the future of water solutions and agricultural implements with us.</p>
+                  <!-- <i class="bi bi-brightness-high"></i>
+                  <p>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="features-row section-bg" data-aos="fade-up">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <img class="advanced-feature-img-right wow fadeInRight" src="image/agricutul.png" alt="">
+                <div>
+                  <h2>Quality You Can Rely On:</h2>
+                  <p style="font-size: 1.5rem;color: black;">"QUALITY YOU CAN RELY ON" is not just a slogan; it's our unwavering commitment to continuous improvement. We invest in enhancing our technical knowledge and competence to propel us as an innovation and technology-driven enterprise. At KRISHCO, successful innovations are born from a deep understanding of market requirements and a foresight into future technology trends.
+                    Choose KRISHCO Engineers Pvt Ltd for water solutions that go beyond expectations, for products that stand the test of time, and for a commitment to excellence that ensures a quality of life you can rely on. Experience the future of water management with us.
+                    </p>
+                  <p style="font-size: 1.5rem;color: black;">Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section><!-- End Advanced Featuress Section -->
+       <!-- ======= Call To Action Section ======= -->
+    <section id="call-to-action">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-9 text-center text-lg-start">
+              <h3 class="cta-title">Our Infrastructure:</h3>
+              <p class="cta-text" style="font-size: 2rem;color: black;"> Behind every revolutionary product stands a robust infrastructure, and at KRISHCO, our manufacturing facility is a testament to this philosophy. We leverage modern machines and equipment to craft world-class products, ensuring precision, reliability, and efficiency.
+                Our state-of-the-art infrastructure is equipped with:
+                </p>
+            </div>
+            <!-- <div class="col-lg-3 cta-btn-container text-center">
+              <a class="cta-btn align-middle" href="#">Call To Action</a>
+            </div> -->
+          </div>
+  
+        </div>
+      </section><!-- End Call To Action Section -->
+  
+      <!-- ======= More Features Section ======= -->
+      <section id="more-features" class="section-bg">
+        <div class="container" data-aos="fade-up">
+  
+          <div class="section-header">
+            <h3 class="section-title">More Features</h3>
+            <span class="section-divider"></span>
+            <!-- <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p> -->
+          </div>
+  
+          <div class="row gy-4">
+
+  
+            <div class="col-lg-6">
+              <div class="box">
+                <div class="icon"><i class="bi bi-card-checklist"></i></div>
+                <h4 class="title"><a href="">CNC Lathe Machines:</a></h4>
+                <p class="description">Utilizing Computer Numerical Control technology for precise and efficient machining, our CNC lathe machines form the backbone of our manufacturing process.
+                </p>
+              </div>
+            </div>
+  
+            <div class="col-lg-6">
+              <div class="box">
+                <div class="icon"><i class="bi bi-bar-chart"></i></div>
+                <h4 class="title"><a href="">Shaping Machines: </a></h4>
+                <p class="description">Transforming raw materials into intricate shapes with precision, our shaping machines guarantee the meticulous craftsmanship that defines our products.</p>
+                <h4 class="title"><a href="">Special Purpose Machines (SPM): </a></h4>
+                <p class="description"> Tailored to meet specific manufacturing needs, our SPMs enhance efficiency and flexibility in production.</p>
+              </div>
+            </div>
+  
+            <div class="col-lg-6">
+              <div class="box">
+                <div class="icon"><i class="bi bi-binoculars"></i></div>
+                <h4 class="title"><a href="">Drilling Machines:</a></h4>
+                <p class="description">Ensuring accuracy in creating holes and openings, our drilling machines contribute to the flawless assembly of our products.</p>
+                <h4 class="title"><a href="">Vertical Machining Center (VMC): </a></h4>
+                <p class="description">Employing cutting-edge vertical machining technology for complex and precise manufacturing processes, our VMCs play a crucial role in our production capabilities.</p>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="box">
+                <div class="icon"><i class="bi bi-binoculars"></i></div>
+                <h4 class="title"><a href="">Grinding Machines:</a></h4>
+                <p class="description"> Achieving the finest surface finishes and tight tolerances, our grinding machines add the perfect finishing touch to our products.</p>
+                <h4 class="title"><a href="">Automatic Winding Machine: </a></h4>
+                <p class="description">Ensuring consistency and reliability in winding processes, our automatic winding machines contribute to the durability of our products</p>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="box">
+                <div class="icon"><i class="bi bi-binoculars"></i></div>
+                <h4 class="title"><a href="">Milling Machines: </a></h4>
+                <p class="description">Enabling a diverse range of milling operations, our milling machines ensure the versatility required to meet the demands of our varied product lines.</p>
+                <h4 class="title"><a href="">Lathe Machines:</a></h4>
+                <p class="description"> The cornerstone of precision engineering, our lathe machines contribute to the accurate shaping and turning of materials.
+                </p>
+              </div>
+            </div>
+
+            
+            <div class="col-lg-6">
+              <div class="box">
+                <div class="icon"><i class="bi bi-briefcase"></i></div>
+                <h4 class="title"><a href="">State of the Art Painting and Packing Department:</a></h4>
+                <p class="description"> Our commitment to quality extends to the final stages of production. Our painting and packing department ensures that every product leaving our facility meets the highest standards of aesthetics and protection during transit.
+
+                </p>
+              </div>
+            </div>
+  
+          </div>
+        </div>
+      </section><!-- End More Features Section -->
+      <!-- ------------------------- -->
+      <div class="feed">
+        <h1 class="heading">What Our<span style="color: orangered;">  Clients Say About Us ?</span> </h1>
+        <div class="testimonial owl-carousel owl-theme" data-aos="fade-up"
+        data-aos-anchor-placement="bottom-bottom">
+          <div class="first">
+            <div class="img">
+              <img src="image/man.jpeg" alt="">
+            </div>
+            <label for="">Rakhi singh</label>
+            <h3>Lorem ipsum dolor sit amet</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum repellendus, facilis sunt facere
+              dicta
+              consequuntur accusantium quos consectetur debitis alias voluptate sint excepturi tempora possimus,
+              consequatur
+              pariatur voluptates quam atque.
+            </p>
+    
+          </div>
+          <div class="first">
+            <div class="img">
+              <img src="image/man.jpeg" alt="">
+            </div>
+            <label for="">Raj singh</label>
+            <h3>Lorem ipsum dolor sit amet</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum repellendus, facilis sunt facere
+              dicta
+              consequuntur accusantium quos consectetur debitis alias voluptate sint excepturi tempora possimus,
+              consequatur
+              pariatur voluptates quam atque.
+            </p>
+          </div>
+          <div class="first">
+            <div class="img">
+              <img src="image/man.jpeg" alt="">
+            </div>
+            <label for="">Rak singhr</label>
+            <h3>Lorem ipsum dolor sit amet</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum repellendus, facilis sunt facere
+              dicta
+              consequuntur accusantium quos consectetur debitis alias voluptate sint excepturi tempora possimus,
+              consequatur
+              pariatur voluptates quam atque.
+            </p>
+          </div>
+          <div class="first">
+            <div class="img">
+              <img src="image/man.jpeg" alt="">
+            </div>
+            <label for="">Rajshib singh</label>
+            <h3>Lorem ipsum dolor sit amet</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum repellendus, facilis sunt facere
+              dicta
+              consequuntur accusantium quos consectetur debitis alias voluptate sint excepturi tempora possimus,
+              consequatur
+              pariatur voluptates quam atque.
+            </p>
+          </div>
+          <div class="first">
+            <div class="img">
+              <img src="image/man.jpeg" alt="">
+            </div>
+            <label for="">Rakhi</label>
+            <h3>Lorem ipsum dolor sit amet</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum repellendus, facilis sunt facere
+              dicta
+              consequuntur accusantium quos consectetur debitis alias voluptate sint excepturi tempora possimus,
+              consequatur
+              pariatur voluptates quam atque.
+            </p>
+          </div>
+          <div class="first">
+            <div class="img">
+              <img src="image/man.jpeg" alt="">
+            </div>
+            <label for="">singh</label>
+            <h3>Lorem ipsum dolor sit amet</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum repellendus, facilis sunt facere
+              dicta
+              consequuntur accusantium quos consectetur debitis alias voluptate sint excepturi tempora possimus,
+              consequatur
+              pariatur voluptates quam atque.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- ---------------------------- -->
+      <!-- ======= Frequently Asked Questions Section ======= -->
+    <section id="faq">
+      <div class="container">
+
+        <div class="section-header">
+          <h3 class="section-title">Frequently Asked Questions</h3>
+          <span class="section-divider"></span>
+          <p class="section-description" style="font-size: 2rem;">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+        </div>
+
+        <ul class="faq-list">
+
+          <li>
+            <div data-bs-toggle="collapse" class="collapsed question" href="#faq1">Non consectetur a erat nam at lectus urna duis? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq1" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <div data-bs-toggle="collapse" href="#faq2" class="collapsed question">Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq2" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <div data-bs-toggle="collapse" href="#faq3" class="collapsed question">Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq3" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <div data-bs-toggle="collapse" href="#faq4" class="collapsed question">Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq4" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <div data-bs-toggle="collapse" href="#faq5" class="collapsed question">Tempus quam pellentesque nec nam aliquam sem et tortor consequat? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq5" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <div data-bs-toggle="collapse" href="#faq6" class="collapsed question">Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq6" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque. Pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus. Nibh tellus molestie nunc non blandit massa enim nec.
+              </p>
+            </div>
+          </li>
+
+        </ul>
+
+      </div>
+    </section><!-- End Frequently Asked Questions Section -->
+
+
+    </section><!-- End Team Section -->
+      <!-- --------------------------footer works------------------- -->
+  <footer>
+    <div class="small_footer">
+      <div class="small">
+        <i class="fa-solid fa-phone"> &nbsp; +5644187595</i>
+        <i class="fa-brands fa-whatsapp">&nbsp; +5644187595</i>
+        <ul class="social">
+          <li><a href="#"><i class="fa-brands fa-facebook" title="Facebook" style="color: #f4f6f9;"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-instagram" title="Instagram" style="color:#f9f9f9;"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-twitter" title="Twitter" style="color:#f0fbff;"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-youtube" title="Youtube" style="color:#f6eeee;"></i></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="felx-div">
+      <ul class="ftr-box">
+        <!-- <img src="kri-logo.png" alt=""> -->
+   
+        <li>
+          <h3>Quick Links</h3><br>
+          <h4><a href="Product-page.html">Product</a></h4><br>
+          <h4><a href="about.html">About Us</a></h4><br>
+          <h4><a href="#cont" onclick="setTimeout(scrll,1);">Contact us</a></h4><br>
+          <h4><a href="blog.html">Blogs</a></h4><br>
+          <h4><a href="gallary.html">Gallery</a></h4><br>
+        </li>
+        <li>
+          <div>
+            <h3>Contact Us</h3><br>
+            <div class="p">2nd Floor, Mithulok, West Boring Canal Road, Khetan Lane, Near Bharat Petrol Pump,
+              Beside
+              Senco
+              Gold & Diamonds, Patna, Bihar- 800001</div>
+          </div>
+        </li>
+      </ul>
+        <!-- <li> -->
+          <div class="div-li">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3597.6987966567876!2d85.11724797517394!3d25.614923214655015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed58ee6d975d47%3A0xbc5045cc2b8ae11c!2sRays%20Edutech%20Pvt.%20Ltd!5e0!3m2!1sen!2sin!4v1698580783201!5m2!1sen!2sin"
+              style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        <!-- </li> -->
+    </div>
+  </footer>
+  <div class="rightFixed-btns" data-aos="zoom-out-left">
+    <ul>
+      <li id="li">
+        <a href="#">
+          <i class="fa-brands fa-whatsapp fa-beat" aria-hidden="true"></i>
+          <div class="rightFixed-btns__content" id="content">
+            <small>WhatsApp</small><br>
+            <span>9308654075</span>
+          </div>
+        </a>
+      </li>
+      <li id="li2" class="content2">
+        <a href="#">
+          <i class="fa-solid fa-headset fa-beat"></i>
+          <div class="rightFixed-btns__content" id="content2">
+            <small>Enquiry</small><br>
+            <span>Now</span>
+          </div>
+        </a>
+      </li>
+      <li id="li3">
+        <a href="tel:9308654075">
+          <i class="fa fa-phone fa-beat" aria-hidden="true"></i>
+          <div class="rightFixed-btns__content" id="content3">
+            <small>Calling No.</small><br>
+            <span>9308654075</span>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up fa-beat"></i></button>
+  <div class="popup1">
+    <div class="rak">
+      <div>
+          <i class="fa-solid fa-xmark" id="mark" onclick="$(this).parent().parent().parent().css('display','none');"></i>
+          <h1>Enquiry Form</h1>
+          <table id="table1">
+              <tr>
+                  <td>
+                    <label id="l1">Name</label>
+                    <input type="text" id="t" oninput="legend('#l1','#t')" placeholder="Name" onfocusout="fgchek('#t')" onfocus="fgain('#t')">
+                    <br><span></span>
+                  </td>
+                  <td>
+                    <label id="l2">Contact</label>
+                    <input type="text" id="t1" oninput="legend('#l2','#t1')" placeholder="Contact" minlength="10" maxlength="10" onfocusout="fgchek('#t1')" onfocus="fgain('#t1')">
+                    <br><span></span>
+                  </td>
+              </tr>
+              <tr>
+                  <td colspan="2">
+                    <label id="l3">Email Id</label>
+                    <input type="text" id="t2" placeholder="Email Id" style="width: 95%;" oninput="legend('#l3','#t2')" onfocusout="fgchek('#t2')" onfocus="fgain('#t2')">
+                    <br><span></span>
+                  </td>
+              </tr>
+              <tr>
+                <td style="height: 12rem;" colspan="2">
+                  <label id="l88">Message</label>
+                  <textarea placeholder="Message" id="t100" oninput="legend('#l88','#t100')"></textarea>
+                  <br><span></span>
+                </td>
+              </tr>
+              <tr>
+                  <td colspan="2">
+                    <button>&#x2713; Submit</button>
+                    <!-- <input type="button" value="&#x2713; Submit"> -->
+                  </td>
+              </tr>
+          </table>
+      </div>
+  </div>
+  </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+    <script src="js/scrolltop.js" type="text/javascript"></script>
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      var a = 0;
+      $('.fa-bars').click(function () {
+        if (a == 0) {
+          $('.nav').css({ 'right': '0rem', 'transition': '.3s all linear' })
+          a = 1;
+        }
+        else if (a == 1) {
+          $('.nav').css({ 'right': '-21rem', 'transition': '.3s all linear' })
+          a = 0;
+        }
+      })
+      $(".testimonial").owlCarousel({
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 1500,
+        margin: 60,
+
+        responsive: {
+
+          0: {
+            items: 1
+          },
+
+          600: {
+            items: 1
+          },
+
+          1000: {
+            items: 2
+          }
+        }
+
+      })
+    });
+    
+  </script>
+</body>
+</html>

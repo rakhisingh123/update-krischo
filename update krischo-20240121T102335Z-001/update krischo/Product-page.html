@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Krishco</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/side.css">
+  <link rel="stylesheet" href="css/product.css">
+  <link rel="stylesheet" href="css/popup.css">
+  <link rel="icon" href="image/krishco-logo.jpg">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.green.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="/image/krishco-logo.jpg" onclick="location.href='index.html'" style="user-select: none;">
+    </div>
+    <nav class="nav">
+      <ul class="nav-list">
+        <li><a href="index.html"><i class="fa fa-home" style="color: black;"></i></a></li>
+        <li class="menu"><a class="a" style="color: black;">COMPANY <i class="fa-solid fa-angle-down"></i></a>
+          <ul class="submenu">
+            <li class="menu_item"><a href="about.html">About us</a></li>
+           
+            <li class="menu_item"><a href="gallary.html">Our gallary</a></li>
+            <li class="menu_item"><a href="#award" onclick="setTimeout(sco,1);" >Award & Recognition</a></li>
+          </ul>
+        </li>
+        <li class="menu"><a href="Product-page.html" style="cursor: pointer; color: black;" class="a sr"
+            >PRODUCT</a>
+        </li>
+        </li>
+        <li class="menu"><a href="blog.html" class="a" style="color: black;">BLOG</a>
+        </li>
+        <li class="menu"><a href="#cont" class="a" onclick="setTimeout(scrll,1);" style="color: black;">CONTACT US</a>
+        </li>
+      </ul>
+    </nav>
+    <i class="fa-solid fa-bars" id="bars"></i>
+  </header>
+  <!-- ---------------------------------------social media link---------- -->
+  <div class="rightFixed-btns" data-aos="zoom-out-left">
+    <ul>
+      <li id="li">
+        <a href="#">
+          <i class="fa-brands fa-whatsapp fa-beat" aria-hidden="true"></i>
+          <div class="rightFixed-btns__content" id="content">
+            <small>WhatsApp</small><br>
+            <span>9308654075</span>
+          </div>
+        </a>
+      </li>
+      <li id="li2" class="content2">
+        <a href="#">
+          <i class="fa-solid fa-headset fa-beat"></i>
+          <div class="rightFixed-btns__content" id="content2">
+            <small>Enquiry</small><br>
+            <span>Now</span>
+          </div>
+        </a>
+      </li>
+      <li id="li3">
+        <a href="tel:9308654075">
+          <i class="fa fa-phone fa-beat" aria-hidden="true"></i>
+          <div class="rightFixed-btns__content" id="content3">
+            <small>Calling No.</small><br>
+            <span>9308654075</span>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up fa-beat"></i></button>
+  <section>
+    <div class="main">
+      <aside>
+        <ul class="list">
+          <li>
+            <img src="image/agriculture.jpg" alt="" srcset=""><span>Residential Pumps</span>
+            <i class="fa-solid fa-angle-right right"></i>
+          </li>
+          <li>
+            <img src="image/agriculture.jpg" alt="" srcset=""><span>Agricultural Pumps</span>
+            <i class="fa-solid fa-angle-right right"></i>
+          </li>
+          <li>
+            <img src="image/agriculture.jpg" alt="" srcset=""><span>Solar Water Pumps</span>
+            <i class="fa-solid fa-angle-right right"></i>
+          </li>
+          <li>
+            <img src="image/agriculture.jpg" alt="" srcset=""><span>Specialty Pumps</span>
+            <i class="fa-solid fa-angle-right right"></i>
+          </li>
+          <li>
+            <img src="image/agriculture.jpg" alt="" srcset=""><span>CPVC Pumps</span>
+            <i class="fa-solid fa-angle-right right"></i>
+          </li>
+          <li>
+            <img src="image/agriculture.jpg" alt="" srcset=""><span>CPVC Pipes & Fittings</span>
+            <i class="fa-solid fa-angle-right right"></i>
+          </li>
+          <li>
+            <img src="image/agriculture.jpg" alt="" srcset=""><span>UPVC Pipes & Fittings</span>
+            <i class="fa-solid fa-angle-right right"></i>
+          </li>
+          <li>
+            <img src="image/agriculture.jpg" alt="" srcset=""><span>Sewerage Pipes & Fittings</span>
+            <i class="fa-solid fa-angle-right right"></i>
+          </li>
+          <li>
+            <img src="image/agriculture.jpg" alt="" srcset=""><span>Agricultural Pipes & Fittings</span>
+            <i class="fa-solid fa-angle-right right"></i>
+          </li>
+          <li>
+            <img src="image/agriculture.jpg" alt="" srcset=""><span>UPVC Casing Pipes</span>
+            <i class="fa-solid fa-angle-right right"></i>
+          </li>
+          <li>
+            <img src="image/agriculture.jpg" alt="" srcset=""><span>Column Pipes</span>
+            <i class="fa-solid fa-angle-right right"></i>
+          </li>
+          <li>
+            <img src="image/agriculture.jpg" alt="" srcset=""><span>Water Tanks</span>
+            <i class="fa-solid fa-angle-right right"></i>
+          </li>
+          <li>
+            <img src="image/agriculture.jpg" alt="" srcset=""><span>Solvent Cement</span>
+            <i class="fa-solid fa-angle-right right"></i>
+          </li>
+        </ul>
+      </aside>
+      <button class="butun"><i class="fa-solid fa-bars-progress"></i>
+        <i class="fa-solid fa-close" style="display: none;"></i>
+      </button>
+      <div class="products resi" >
+        <h2>Residential Pumps</h2>
+        <div class="box">
+          <div class="product-name">SELF PRIMING PUMP</div>
+          <div class="pic"><img src="image/self-prumering-pump.jpg" alt=""></div>
+          <div class="vm" onclick="location.href='/Product-page/Self-Purmuring-Pump.html'">View More <i class="fa-solid fa-arrow-right"></i></div>
+        </div>
+        <div class="box">
+          <div class="product-name">SHALLOW WELL</div>
+          <div class="pic"><img src="image/Shallow-well-pump.jpg" alt=""></div>
+          <div class="vm">View More <i class="fa-solid fa-arrow-right"></i></div>
+        </div>
+        <div class="box">
+          <div class="product-name">SUBMERSIBLE</div>
+          <div class="pic"><img src="image/SUBMERSIBLE-pump.jpg" alt=""></div>
+          <div class="vm">View More <i class="fa-solid fa-arrow-right"></i></div>
+        </div>
+        <div class="box">
+          <div class="product-name">OPENWELL SUBMERSIBLE</div>
+          <div class="pic"><img src="image/OPENWELL-SUBMERSIBLE-pump.jpg" alt=""></div>
+          <div class="vm">View More <i class="fa-solid fa-arrow-right"></i></div>
+        </div>
+        <div class="box">
+          <div class="product-name">JET PUMPS</div>
+          <div class="pic"><img src="image/JET-PUMPS.jpg" alt=""></div>
+          <div class="vm">View More <i class="fa-solid fa-arrow-right"></i></div>
+        </div>
+      </div>
+      <div class="products agri" style="display: none;">
+        <h2>Agricultural Pumps</h2>
+        <div class="box">
+          <div class="product-name">AGRICULTURAL MONOBLOCKS</div>
+          <div class="pic"><img src="image/AGRICULTURAL-MONOBLOCKS.jpg" alt=""></div>
+          <div class="vm">View More <i class="fa-solid fa-arrow-right"></i></div>
+        </div>
+        <div class="box">
+          <div class="product-name">AGRICULTURAL SUBMERSIBLES</div>
+          <div class="pic"><img src="image/AGRICULTURAL-SUBMERSIBLES.jpg" alt=""></div>
+          <div class="vm">View More <i class="fa-solid fa-arrow-right"></i></div>
+        </div>
+        <div class="box">
+          <div class="product-name">HORIZONTAL OPENWELL</div>
+          <div class="pic"><img src="image/HORIZONTAL-OPENWEL.jpg" alt=""></div>
+          <div class="vm">View More <i class="fa-solid fa-arrow-right"></i></div>
+        </div>
+        <div class="box">
+          <div class="product-name">VERTICAL OPENWELL</div>
+          <div class="pic"><img src="image/VERTICAL-OPENWELL.jpg" alt=""></div>
+          <div class="vm">View More <i class="fa-solid fa-arrow-right"></i></div>
+        </div>
+        <div class="box">
+          <div class="product-name">JET PUMPS</div>
+          <div class="pic"><img src="image/JET-PUMPS.jpg" alt=""></div>
+          <div class="vm">View More <i class="fa-solid fa-arrow-right"></i></div>
+        </div>
+      </div>
+      <div class="products solar-water" style="display: none;">
+        <h2>Solar Water Pumps</h2>
+        <div class="box">
+          <div class="product-name">AGRICULTURAL MONOBLOCKS</div>
+          <div class="pic"><img src="image/AGRICULTURAL-MONOBLOCKS.jpg" alt=""></div>
+          <div class="vm">View More <i class="fa-solid fa-arrow-right"></i></div>
+        </div>
+        <div class="box">
+          <div class="product-name">AGRICULTURAL SUBMERSIBLES</div>
+          <div class="pic"><img src="image/AGRICULTURAL-SUBMERSIBLES.jpg" alt=""></div>
+          <div class="vm">View More <i class="fa-solid fa-arrow-right"></i></div>
+        </div>
+        <div class="box">
+          <div class="product-name">HORIZONTAL OPENWELL</div>
+          <div class="pic"><img src="image/HORIZONTAL-OPENWEL.jpg" alt=""></div>
+          <div class="vm">View More <i class="fa-solid fa-arrow-right"></i></div>
+        </div>
+        <div class="box">
+          <div class="product-name">VERTICAL OPENWELL</div>
+          <div class="pic"><img src="image/VERTICAL-OPENWELL.jpg" alt=""></div>
+          <div class="vm">View More <i class="fa-solid fa-arrow-right"></i></div>
+        </div>
+        <div class="box">
+          <div class="product-name">JET PUMPS</div>
+          <div class="pic"><img src="image/JET-PUMPS.jpg" alt=""></div>
+          <div class="vm">View More <i class="fa-solid fa-arrow-right"></i></div>
+        </div>
+      </div>
+      <div class="products speciality" style="display: none;">
+        <h2>Specialty Pumps</h2>
+        <div class="box">
+          <div class="product-name">AGRICULTURAL MONOBLOCKS</div>
+          <div class="pic"><img src="image/AGRICULTURAL-MONOBLOCKS.jpg" alt=""></div>
+          <div class="vm">View More <i class="fa-solid fa-arrow-right"></i></div>
+        </div>
+        <div class="box">
+          <div class="product-name">AGRICULTURAL SUBMERSIBLES</div>
+          <div class="pic"><img src="image/AGRICULTURAL-SUBMERSIBLES.jpg" alt=""></div>
+          <div class="vm">View More <i class="fa-solid fa-arrow-right"></i></div>
+        </div>
+        <div class="box">
+          <div class="product-name">HORIZONTAL OPENWELL</div>
+          <div class="pic"><img src="image/HORIZONTAL-OPENWEL.jpg" alt=""></div>
+          <div class="vm">View More <i class="fa-solid fa-arrow-right"></i></div>
+        </div>
+        <div class="box">
+          <div class="product-name">VERTICAL OPENWELL</div>
+          <div class="pic"><img src="image/VERTICAL-OPENWELL.jpg" alt=""></div>
+          <div class="vm">View More <i class="fa-solid fa-arrow-right"></i></div>
+        </div>
+        <div class="box">
+          <div class="product-name">JET PUMPS</div>
+          <div class="pic"><img src="image/JET-PUMPS.jpg" alt=""></div>
+          <div class="vm">View More <i class="fa-solid fa-arrow-right"></i></div>
+        </div>
+      </div>
+      <div class="products cpvc-pump" style="display: none;">
+        <h2>CPVC Pumps</h2>
+        <div class="box">
+          <div class="product-name">AGRICULTURAL MONOBLOCKS</div>
+          <div class="pic"><img src="image/AGRICULTURAL-MONOBLOCKS.jpg" alt=""></div>
+          <div class="vm">View More <i class="fa-solid fa-arrow-right"></i></div>
+        </div>
+        <div class="box">
+          <div class="product-name">AGRICULTURAL SUBMERSIBLES</div>
+          <div class="pic"><img src="image/AGRICULTURAL-SUBMERSIBLES.jpg" alt=""></div>
+          <div class="vm">View More <i class="fa-solid fa-arrow-right"></i></div>
+        </div>
+        <div class="box">
+          <div class="product-name">HORIZONTAL OPENWELL</div>
+          <div class="pic"><img src="image/HORIZONTAL-OPENWEL.jpg" alt=""></div>
+          <div class="vm">View More <i class="fa-solid fa-arrow-right"></i></div>
+        </div>
+        <div class="box">
+          <div class="product-name">VERTICAL OPENWELL</div>
+          <div class="pic"><img src="image/VERTICAL-OPENWELL.jpg" alt=""></div>
+          <div class="vm">View More <i class="fa-solid fa-arrow-right"></i></div>
+        </div>
+        <div class="box">
+          <div class="product-name">JET PUMPS</div>
+          <div class="pic"><img src="image/JET-PUMPS.jpg" alt=""></div>
+          <div class="vm">View More <i class="fa-solid fa-arrow-right"></i></div>
+        </div>
+      </div>
+      <div class="products cpvc-pipe" style="display: none;">
+        <h2>CPVC Pipes & Fittings</h2>
+        <div class="box">
+          <div class="product-name">CPVC Pipes & Fittings</div>
+          <div class="pic"><img src="image/cpvc-pipe.jpg" alt=""></div>
+          <div class="vm" onclick="location.href='/Product-Page/CPVC-Pipe-Fittings.html'">View More <i class="fa-solid fa-arrow-right"></i></div>
+        </div>
+      </div>
+      <div class="products upvc-pipe" style="display: none;">
+        <h2>UPVC Pipes & Fittings</h2>
+        <div class="box">
+          <div class="product-name">AGRICULTURAL MONOBLOCKS</div>
+          <div class="pic"><img src="image/AGRICULTURAL-MONOBLOCKS.jpg" alt=""></div>
+          <div class="vm">View More <i class="fa-solid fa-arrow-right"></i></div>
+        </div>
+        <div class="box">
+          <div class="product-name">AGRICULTURAL SUBMERSIBLES</div>
+          <div class="pic"><img src="image/AGRICULTURAL-SUBMERSIBLES.jpg" alt=""></div>
+          <div class="vm">View More <i class="fa-solid fa-arrow-right"></i></div>
+        </div>
+        <div class="box">
+          <div class="product-name">HORIZONTAL OPENWELL</div>
+          <div class="pic"><img src="image/HORIZONTAL-OPENWEL.jpg" alt=""></div>
+          <div class="vm">View More <i class="fa-solid fa-arrow-right"></i></div>
+        </div>
+        <div class="box">
+          <div class="product-name">VERTICAL OPENWELL</div>
+          <div class="pic"><img src="image/VERTICAL-OPENWELL.jpg" alt=""></div>
+          <div class="vm">View More <i class="fa-solid fa-arrow-right"></i></div>
+        </div>
+        <div class="box">
+          <div class="product-name">JET PUMPS</div>
+          <div class="pic"><img src="image/JET-PUMPS.jpg" alt=""></div>
+          <div class="vm">View More <i class="fa-solid fa-arrow-right"></i></div>
+        </div>
+      </div>
+      <div class="products sewerage-pipe" style="display: none;">
+        <h2>Sewerage Pipes & Fittings</h2>
+        <div class="box">
+          <div class="product-name">AGRICULTURAL MONOBLOCKS</div>
+          <div class="pic"><img src="image/AGRICULTURAL-MONOBLOCKS.jpg" alt=""></div>
+          <div class="vm">View More <i class="fa-solid fa-arrow-right"></i></div>
+        </div>
+        <div class="box">
+          <div class="product-name">AGRICULTURAL SUBMERSIBLES</div>
+          <div class="pic"><img src="image/AGRICULTURAL-SUBMERSIBLES.jpg" alt=""></div>
+          <div class="vm">View More <i class="fa-solid fa-arrow-right"></i></div>
+        </div>
+        <div class="box">
+          <div class="product-name">HORIZONTAL OPENWELL</div>
+          <div class="pic"><img src="image/HORIZONTAL-OPENWEL.jpg" alt=""></div>
+          <div class="vm">View More <i class="fa-solid fa-arrow-right"></i></div>
+        </div>
+        <div class="box">
+          <div class="product-name">VERTICAL OPENWELL</div>
+          <div class="pic"><img src="image/VERTICAL-OPENWELL.jpg" alt=""></div>
+          <div class="vm">View More <i class="fa-solid fa-arrow-right"></i></div>
+        </div>
+        <div class="box">
+          <div class="product-name">JET PUMPS</div>
+          <div class="pic"><img src="image/JET-PUMPS.jpg" alt=""></div>
+          <div class="vm">View More <i class="fa-solid fa-arrow-right"></i></div>
+        </div>
+      </div>
+      <div class="products agri-pipe" style="display: none;">
+        <h2>Agricultural Pipes & Fittings</h2>
+        <div class="box">
+          <div class="product-name">AGRICULTURAL MONOBLOCKS</div>
+          <div class="pic"><img src="image/AGRICULTURAL-MONOBLOCKS.jpg" alt=""></div>
+          <div class="vm">View More <i class="fa-solid fa-arrow-right"></i></div>
+        </div>
+        <div class="box">
+          <div class="product-name">AGRICULTURAL SUBMERSIBLES</div>
+          <div class="pic"><img src="image/AGRICULTURAL-SUBMERSIBLES.jpg" alt=""></div>
+          <div class="vm">View More <i class="fa-solid fa-arrow-right"></i></div>
+        </div>
+        <div class="box">
+          <div class="product-name">HORIZONTAL OPENWELL</div>
+          <div class="pic"><img src="image/HORIZONTAL-OPENWEL.jpg" alt=""></div>
+          <div class="vm">View More <i class="fa-solid fa-arrow-right"></i></div>
+        </div>
+        <div class="box">
+          <div class="product-name">VERTICAL OPENWELL</div>
+          <div class="pic"><img src="image/VERTICAL-OPENWELL.jpg" alt=""></div>
+          <div class="vm">View More <i class="fa-solid fa-arrow-right"></i></div>
+        </div>
+        <div class="box">
+          <div class="product-name">JET PUMPS</div>
+          <div class="pic"><img src="image/JET-PUMPS.jpg" alt=""></div>
+          <div class="vm">View More <i class="fa-solid fa-arrow-right"></i></div>
+        </div>
+      </div>
+      <div class="products upvc-casing-pipe" style="display: none;">
+        <h2>UPVC Casing Pipes</h2>
+        <div class="box">
+          <div class="product-name">AGRICULTURAL MONOBLOCKS</div>
+          <div class="pic"><img src="image/AGRICULTURAL-MONOBLOCKS.jpg" alt=""></div>
+          <div class="vm">View More <i class="fa-solid fa-arrow-right"></i></div>
+        </div>
+        <div class="box">
+          <div class="product-name">AGRICULTURAL SUBMERSIBLES</div>
+          <div class="pic"><img src="image/AGRICULTURAL-SUBMERSIBLES.jpg" alt=""></div>
+          <div class="vm">View More <i class="fa-solid fa-arrow-right"></i></div>
+        </div>
+        <div class="box">
+          <div class="product-name">HORIZONTAL OPENWELL</div>
+          <div class="pic"><img src="image/HORIZONTAL-OPENWEL.jpg" alt=""></div>
+          <div class="vm">View More <i class="fa-solid fa-arrow-right"></i></div>
+        </div>
+        <div class="box">
+          <div class="product-name">VERTICAL OPENWELL</div>
+          <div class="pic"><img src="image/VERTICAL-OPENWELL.jpg" alt=""></div>
+          <div class="vm">View More <i class="fa-solid fa-arrow-right"></i></div>
+        </div>
+        <div class="box">
+          <div class="product-name">JET PUMPS</div>
+          <div class="pic"><img src="image/JET-PUMPS.jpg" alt=""></div>
+          <div class="vm">View More <i class="fa-solid fa-arrow-right"></i></div>
+        </div>
+      </div>
+      <div class="products column-pipe" style="display: none;">
+        <h2>Column Pipes</h2>
+        <div class="box">
+          <div class="product-name">AGRICULTURAL MONOBLOCKS</div>
+          <div class="pic"><img src="image/AGRICULTURAL-MONOBLOCKS.jpg" alt=""></div>
+          <div class="vm">View More <i class="fa-solid fa-arrow-right"></i></div>
+        </div>
+        <div class="box">
+          <div class="product-name">AGRICULTURAL SUBMERSIBLES</div>
+          <div class="pic"><img src="image/AGRICULTURAL-SUBMERSIBLES.jpg" alt=""></div>
+          <div class="vm">View More <i class="fa-solid fa-arrow-right"></i></div>
+        </div>
+        <div class="box">
+          <div class="product-name">HORIZONTAL OPENWELL</div>
+          <div class="pic"><img src="image/HORIZONTAL-OPENWEL.jpg" alt=""></div>
+          <div class="vm">View More <i class="fa-solid fa-arrow-right"></i></div>
+        </div>
+        <div class="box">
+          <div class="product-name">VERTICAL OPENWELL</div>
+          <div class="pic"><img src="image/VERTICAL-OPENWELL.jpg" alt=""></div>
+          <div class="vm">View More <i class="fa-solid fa-arrow-right"></i></div>
+        </div>
+        <div class="box">
+          <div class="product-name">JET PUMPS</div>
+          <div class="pic"><img src="image/JET-PUMPS.jpg" alt=""></div>
+          <div class="vm">View More <i class="fa-solid fa-arrow-right"></i></div>
+        </div>
+      </div>
+      <div class="products water-tank" style="display: none;">
+        <h2>Water Tanks</h2>
+        <div class="box">
+          <div class="product-name">AGRICULTURAL MONOBLOCKS</div>
+          <div class="pic"><img src="image/AGRICULTURAL-MONOBLOCKS.jpg" alt=""></div>
+          <div class="vm">View More <i class="fa-solid fa-arrow-right"></i></div>
+        </div>
+        <div class="box">
+          <div class="product-name">AGRICULTURAL SUBMERSIBLES</div>
+          <div class="pic"><img src="image/AGRICULTURAL-SUBMERSIBLES.jpg" alt=""></div>
+          <div class="vm">View More <i class="fa-solid fa-arrow-right"></i></div>
+        </div>
+        <div class="box">
+          <div class="product-name">HORIZONTAL OPENWELL</div>
+          <div class="pic"><img src="image/HORIZONTAL-OPENWEL.jpg" alt=""></div>
+          <div class="vm">View More <i class="fa-solid fa-arrow-right"></i></div>
+        </div>
+        <div class="box">
+          <div class="product-name">VERTICAL OPENWELL</div>
+          <div class="pic"><img src="image/VERTICAL-OPENWELL.jpg" alt=""></div>
+          <div class="vm">View More <i class="fa-solid fa-arrow-right"></i></div>
+        </div>
+        <div class="box">
+          <div class="product-name">JET PUMPS</div>
+          <div class="pic"><img src="image/JET-PUMPS.jpg" alt=""></div>
+          <div class="vm">View More <i class="fa-solid fa-arrow-right"></i></div>
+        </div>
+      </div>
+      <div class="products solvent-cement" style="display: none;">
+        <h2>Solvent Cement</h2>
+        <div class="box">
+          <div class="product-name">AGRICULTURAL MONOBLOCKS</div>
+          <div class="pic"><img src="image/AGRICULTURAL-MONOBLOCKS.jpg" alt=""></div>
+          <div class="vm">View More <i class="fa-solid fa-arrow-right"></i></div>
+        </div>
+        <div class="box">
+          <div class="product-name">AGRICULTURAL SUBMERSIBLES</div>
+          <div class="pic"><img src="image/AGRICULTURAL-SUBMERSIBLES.jpg" alt=""></div>
+          <div class="vm">View More <i class="fa-solid fa-arrow-right"></i></div>
+        </div>
+        <div class="box">
+          <div class="product-name">HORIZONTAL OPENWELL</div>
+          <div class="pic"><img src="image/HORIZONTAL-OPENWEL.jpg" alt=""></div>
+          <div class="vm">View More <i class="fa-solid fa-arrow-right"></i></div>
+        </div>
+        <div class="box">
+          <div class="product-name">VERTICAL OPENWELL</div>
+          <div class="pic"><img src="image/VERTICAL-OPENWELL.jpg" alt=""></div>
+          <div class="vm">View More <i class="fa-solid fa-arrow-right"></i></div>
+        </div>
+        <div class="box">
+          <div class="product-name">JET PUMPS</div>
+          <div class="pic"><img src="image/JET-PUMPS.jpg" alt=""></div>
+          <div class="vm">View More <i class="fa-solid fa-arrow-right"></i></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up fa-beat"></i></button>
+  <!-- <button onclick="topFunction()" id="myBtn" title="Go to top">&#8593;</button> -->
+  <!-- --------------------------footer works------------------- -->
+  <footer>
+    <div class="small_footer">
+      <div class="small">
+        <i class="fa-solid fa-phone"> &nbsp; +5644187595</i>
+        <i class="fa-brands fa-whatsapp">&nbsp; +5644187595</i>
+        <ul class="social">
+          <li><a href="#"><i class="fa-brands fa-facebook" title="Facebook" style="color: #f4f6f9;"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-instagram" title="Instagram" style="color:#f9f9f9;"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-twitter" title="Twitter" style="color:#f0fbff;"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-youtube" title="Youtube" style="color:#f6eeee;"></i></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="felx-div">
+      <ul class="ftr-box">
+        <!-- <img src="kri-logo.png" alt=""> -->
+   
+        <li>
+          <h3>Quick Links</h3><br>
+          <h4><a href="Product-page.html">Product</a></h4><br>
+          <h4><a href="about.html">About Us</a></h4><br>
+          <h4><a href="#cont" onclick="setTimeout(scrll,1);">Contact us</a></h4><br>
+          <h4><a href="blog.html">Blogs</a></h4><br>
+          <h4><a href="gallary.html">Gallery</a></h4><br>
+        </li>
+        <li>
+          <div>
+            <h3>Contact Us</h3><br>
+            <div class="p">2nd Floor, Mithulok, West Boring Canal Road, Khetan Lane, Near Bharat Petrol Pump,
+              Beside
+              Senco
+              Gold & Diamonds, Patna, Bihar- 800001</div>
+          </div>
+        </li>
+      </ul>
+        <!-- <li> -->
+          <div class="div-li">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3597.6987966567876!2d85.11724797517394!3d25.614923214655015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed58ee6d975d47%3A0xbc5045cc2b8ae11c!2sRays%20Edutech%20Pvt.%20Ltd!5e0!3m2!1sen!2sin!4v1698580783201!5m2!1sen!2sin"
+              style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        <!-- </li> -->
+    </div>
+  </footer>
+  <div class="popup1">
+    <div class="rak">
+      <div>
+          <i class="fa-solid fa-xmark" id="mark" onclick="$(this).parent().parent().parent().css('display','none');"></i>
+          <h1>Enquiry Form</h1>
+          <table id="table1">
+              <tr>
+                  <td>
+                    <label id="l1">Name</label>
+                    <input type="text" id="t" oninput="legend('#l1','#t')" placeholder="Name" onfocusout="fgchek('#t')" onfocus="fgain('#t')">
+                    <br><span></span>
+                  </td>
+                  <td>
+                    <label id="l2">Contact</label>
+                    <input type="text" id="t1" oninput="legend('#l2','#t1')" placeholder="Contact" minlength="10" maxlength="10" onfocusout="fgchek('#t1')" onfocus="fgain('#t1')">
+                    <br><span></span>
+                  </td>
+              </tr>
+              <tr>
+                  <td colspan="2">
+                    <label id="l3">Email Id</label>
+                    <input type="text" id="t2" placeholder="Email Id" style="width: 95%;" oninput="legend('#l3','#t2')" onfocusout="fgchek('#t2')" onfocus="fgain('#t2')">
+                    <br><span></span>
+                  </td>
+              </tr>
+              <tr>
+                <td style="height: 12rem;" colspan="2">
+                  <label id="l88">Message</label>
+                  <textarea placeholder="Message" id="t100" oninput="legend('#l88','#t100')"></textarea>
+                  <br><span></span>
+                </td>
+              </tr>
+              <tr>
+                  <td colspan="2">
+                    <button>&#x2713; Submit</button>
+                    <!-- <input type="button" value="&#x2713; Submit"> -->
+                  </td>
+              </tr>
+          </table>
+      </div>
+  </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+  <script src="js/scrolltop.js" type="text/javascript"></script>
+  <script src="js/product.js" type="text/javascript"></script>
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+  <script>
+    AOS.init();
+    $(document).ready(function () {
+      setInterval(productbar,100);
+      var a = 0;
+      $('.fa-bars').click(function () {
+        if (a == 0) {
+          $('.nav').css({ 'right': '0rem', 'transition': '.3s all linear' })
+          a = 1;
+        }
+        else if (a == 1) {
+          $('.nav').css({ 'right': '-21rem', 'transition': '.3s all linear' })
+          a = 0;
+        }
+      })
+    });
+    
+  </script>
+</body>
+
+</html>
